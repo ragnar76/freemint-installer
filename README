@@ -1,0 +1,9 @@
+freemint-installer
+==================
+
+This is a little shellscript gathering all necessary files to get a full
+working FreeMiNT package. It copies almost every usable file out of the cvs
+tree and creates a simple package you can use.
+
+more text to come :)
+
