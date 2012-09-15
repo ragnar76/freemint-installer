@@ -191,8 +191,8 @@ echo -e "\n"
 echo -e " Inserting TeraDesk "
 echo -e "===================="
 cd install/mint/$VER/
-# wget -q -T0 -t0 http://solair.eunet.rs/~vdjole/tera403b.zip
-wget -q -T0 -t0 http://127.0.0.1/tera403b.zip
+wget -q -T0 -t0 http://solair.eunet.rs/~vdjole/tera403b.zip
+# wget -q -T0 -t0 http://127.0.0.1/tera403b.zip
 unzip -qq -X -K -d teradesk tera403b.zip
 rm tera403b.zip
 cd teradesk
