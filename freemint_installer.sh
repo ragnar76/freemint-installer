@@ -253,15 +253,15 @@ echo "==================="
 echo -e "\n"
 echo -e " Inserting TeraDesk "
 echo -e "===================="
-#cd install_dir/mint/$VER/
-# wget -T0 -t0 http://solair.eunet.rs/~vdjole/tera404b.zip
+cd install_dir/mint/$VER/
+ wget -T0 -t0 http://solair.eunet.rs/~vdjole/tera404b.zip
 # wget -q -T0 -t0 http://127.0.0.1/tera403b.zip
-#unzip -qq -X -K -d teradesk tera404b.zip
-#rm tera404b.zip
-#cd teradesk
-#find . -name '*' -type f -exec /bin/chmod 0644 {} \;
-#find . -name '*' -type d -exec /bin/chmod 0755 {} \;
-#cd ..
+unzip -qq -X -K -d teradesk tera404b.zip
+rm tera404b.zip
+cd teradesk
+find . -name '*' -type f -exec /bin/chmod 0644 {} \;
+find . -name '*' -type d -exec /bin/chmod 0755 {} \;
+cd ..
 
 # some config files are written here
 echo -e "\n"
