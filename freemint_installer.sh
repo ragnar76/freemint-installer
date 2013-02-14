@@ -247,13 +247,14 @@ echo -e "\n"
 echo -e " Inserting TeraDesk "
 echo -e "===================="
 cd $INSTALL_DIR/mint/$VER/
-wget -T0 -t0 http://solair.eunet.rs/~vdjole/tera404b.zip
+# wget -T0 -t0 http://solair.eunet.rs/~vdjole/tera404b.zip
+wget -q -T0 -t0 http://localhost/tera404b.zip
 unzip -qq -X -K -d teradesk tera404b.zip
 rm tera404b.zip
 cd teradesk
 find . -name '*' -type f -exec /bin/chmod 0644 {} \;
 find . -name '*' -type d -exec /bin/chmod 0755 {} \;
-cd ..
+cd ../..
 
 # some config files are written here
 echo -e "\n"
@@ -291,4 +292,17 @@ setenv AVSERVER   "DESKTOP"
 setenv FONTSELECT "DESKTOP"
 shell = c:\\mint\\$VER\\teradesk\\desktop.prg
 END_OF_XAAES_CNF
-cd ..
+
+# create a zip archive
+echo -e "\n"
+echo -e " Creating a zip archive "
+echo -e "========================"
+cd ../..
+zip -qq -r -9 mint_119.zip mint_119/
+
+# create a zip archive
+echo -e "\n"
+echo -e " Cleaning up "
+echo -e "============="
+rm -rf mint_119
+
