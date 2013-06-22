@@ -298,7 +298,7 @@ echo -e "\n"
 echo -e " Creating a zip archive "
 echo -e "========================"
 cd ../..
-zip -qq -r -9 mint_119.zip mint_119/
+zip -qq -r -9 mint_119-$TODAY.zip mint_119/
 
 # create a zip archive
 echo -e "\n"
